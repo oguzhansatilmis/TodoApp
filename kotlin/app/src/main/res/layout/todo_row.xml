@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/todoRowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="deneme"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+
+        </TextView>
+        <TextView
+        android:id="@+id/todoRowDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="2"
+        android:textColor="@color/white"
+        android:layout_margin="5dp">
+
+        </TextView>
+
+</LinearLayout>

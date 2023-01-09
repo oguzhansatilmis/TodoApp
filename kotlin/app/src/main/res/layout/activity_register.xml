@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity"
+    android:background="@drawable/register">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="223dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="192dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Email Adresi"
+        android:inputType="textEmailAddress"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password2Text"
+        android:layout_width="231dp"
+        android:layout_height="49dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Parola doğrulama"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="105dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button"
+        android:text="Tamamla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2Text"
+        app:layout_constraintVertical_bias="0.183"
+        />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/emailText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintVertical_bias="0.07" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
